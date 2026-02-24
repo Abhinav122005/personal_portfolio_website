@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ project.title }}</h1>
+<p style="
+    font-size:18px;
+    line-height:1.8;
+    margin-top:20px;
+    color:#333;
+">{{ project.description|linebreaks }}</p>
+{% if project.image %}
+    <img src="{{ project.image.url }}" width="800" >
+{% endif %}
+<p><strong>Tech Stack:</strong> {{ project.tech_stack }}</p>
+<a href="{{ project.github_link }}">View on GitHub</a>
+{% endblock %}

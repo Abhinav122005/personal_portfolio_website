@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div style="
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    padding:70px 20px;
+    border-radius:20px;
+">
+
+    <h2 style="
+        text-align:center;
+        margin-bottom:40px;
+        color:white;
+    ">
+        Contact Me
+    </h2>
+
+    <div style="
+        display:flex;
+        justify-content:center;
+    ">
+
+        <div style="
+            width:100%;
+            max-width:600px;
+            background: linear-gradient(to right, #e3f2fd, #f0f4ff);
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 15px 30px rgba(0,0,0,0.2);
+        ">
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <div style="margin-bottom:20px;">
+                    <label><strong>Your Name</strong></label><br>
+                    <input type="text" name="name" required
+                        style="
+                            width:100%;
+                            padding:12px;
+                            margin-top:8px;
+                            border-radius:10px;
+                            border:1px solid #ccc;
+                            font-size:16px;
+                        ">
+                </div>
+
+                <div style="margin-bottom:20px;">
+                    <label><strong>Your Email</strong></label><br>
+                    <input type="email" name="email" required
+                        style="
+                            width:100%;
+                            padding:12px;
+                            margin-top:8px;
+                            border-radius:10px;
+                            border:1px solid #ccc;
+                            font-size:16px;
+                        ">
+                </div>
+
+                <div style="margin-bottom:25px;">
+                    <label><strong>Your Message</strong></label><br>
+                    <textarea name="message" rows="5" required
+                        style="
+                            width:100%;
+                            padding:12px;
+                            margin-top:8px;
+                            border-radius:10px;
+                            border:1px solid #ccc;
+                            font-size:16px;
+                        "></textarea>
+                </div>
+
+                <div style="text-align:center;">
+                    <button type="submit"
+                        style="
+                            background:#4e73df;
+                            color:white;
+                            padding:12px 25px;
+                            border:none;
+                            border-radius:10px;
+                            font-size:16px;
+                            font-weight:bold;
+                            cursor:pointer;
+                        ">
+                        Send Message
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
