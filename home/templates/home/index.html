@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <div style="
@@ -24,17 +24,17 @@
                 <h1 id="typing-text" class="typewriter" style="font-size:38px; margin-bottom:10px;"></h1>
 
                 <div style="margin-top:15px;">
-    <a href="https://linkedin.com/in/YOUR_LINK" target="_blank"
+    <a href="https://www.linkedin.com/in/abhinav-rayabarapu-a6a59233a/" target="_blank"
        style="margin-right:15px; text-decoration:underline; font-weight:bold;font-size: 18px; color:white;">
         LinkedIn
     </a>
 
-    <a href="https://github.com/YOUR_USERNAME" target="_blank"
+    <a href="https://github.com/Abhinav122005" target="_blank"
        style="margin-right:15px; text-decoration:underline; font-weight:bold;font-size: 18px; color:white;">
         GitHub
     </a>
 
-    <a href="mailto:your@email.com"
+    <a href="mailto:rayabarapuabhinav@email.com"
        style="text-decoration:underline; font-weight:bold; font-size: 18px;color:white;">
         Email
     </a>
@@ -47,7 +47,7 @@
             </div>
 
             <div style="flex:1; text-align:center; min-width:250px;">
-                <img src="/media/profile.jpg"
+                <img src="{% static 'images/profile.jpg' %}"
                      alt="Profile Photo"
                      style="width:230px; height:230px; border-radius:50%; object-fit:cover; border:4px solid white;">
             </div>
@@ -284,7 +284,7 @@
         text-align:center;
         transition: all 0.4s ease;
     ">
-        <img src="/media/certificates/ORACLE Certificate.jpg"
+        <img src="{% static '/images/ORACLE Certificate.jpg' %}"
              alt="Certificate 1"
              style="
                 width:100%;
@@ -305,7 +305,7 @@
         text-align:center;
         transition: all 0.4s ease;
     ">
-        <img src="/media/certificates/CSI Machine & Deep Learning certificate_page-0001.jpg"
+        <img src="{%static'/images/CSI Machine & Deep Learning certificate_page-0001.jpg'%}"
              alt="Certificate 2"
              style="
                 width:100%;
@@ -326,7 +326,7 @@
         text-align:center;
         transition: all 0.4s ease;
     ">
-        <img src="/media/certificates/DATA ANALYTICS FORAGE _completion_certificate_page-0001.jpg"
+        <img src="{%static '/images/DATA ANALYTICS FORAGE _completion_certificate_page-0001'%}"
              alt="Certificate 3"
              style="
                 width:100%;
@@ -346,7 +346,7 @@
         text-align:center;
         transition: all 0.4s ease;
     ">
-        <img src="/media/certificates/IBM PY0101EN Certificate _ Cognitive Class_page-0001.jpg"
+        <img src="{%static'/images/IBM PY0101EN Certificate _ Cognitive Class_page-0001.jpg'%}"
              alt="Certificate 3"
              style="
                 width:100%;
@@ -366,7 +366,7 @@
         text-align:center;
         transition: all 0.4s ease;
     ">
-        <img src="/media/certificates/8c6402f6efd94b1889bad2abd41c95ff_page-0001.jpg"
+        <img src="{%static'/images/8c6402f6efd94b1889bad2abd41c95ff_page-0001.jpg'%}"
              alt="Certificate 3"
              style="
                 width:100%;
@@ -386,7 +386,7 @@
         text-align:center;
         transition: all 0.4s ease;
     ">
-        <img src="/media/certificates/AI Academia Certificate(chatbot).jpg"
+        <img src="{%static'/images/AI Academia Certificate(chatbot).jpg'%}"
              alt="Certificate 3"
              style="
                 width:100%;
