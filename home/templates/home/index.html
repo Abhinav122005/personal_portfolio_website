@@ -26,6 +26,8 @@
     flex: 1;
     text-align: center;
     min-width: 250px;
+    text-align: right;
+    padding-right: 30px;
 }
 
 .grid-2 {
@@ -65,7 +67,8 @@
 <!-- ===== HERO SECTION ===== -->
 <div class="hero">
     <div class="hero-text">
-        <h1 id="typing-text" class="typewriter" style="font-size:38px; margin-bottom:10px;"></h1>
+        <h1 id="typing-text" class="typewriter" style="font-size:38px; margin-bottom:10px; white-space: nowrap; overflow: hidden;
+        text-overflow: ellipsis;"></h1>
 
         <div style="margin-top:15px;">
             <a href="https://www.linkedin.com/in/abhinav-rayabarapu-a6a59233a/" target="_blank"
@@ -83,6 +86,22 @@
                 Email
             </a>
         </div>
+
+<div style="margin-top:20px;">
+    <a href="{% static 'files/Abhinav_Resume.pdf' %}" 
+       target="_blank"
+       style="
+           background:white;
+           color:#4e73df;
+           padding:10px 18px;
+           border-radius:8px;
+           text-decoration:none;
+           font-weight:bold;
+           display:inline-block;
+       ">
+       View Resume
+    </a>
+</div>
 
         <p style="margin-top:15px; line-height:1.6;">
             I build scalable backend systems using Django and Python.
